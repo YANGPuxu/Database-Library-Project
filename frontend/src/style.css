@@ -1,0 +1,38 @@
+:root {
+  --el-color-primary: #409eff; /* 保持 Element 经典蓝，或者你可以换成 #3ca9f5 */
+  --bg-color-soft: #f0f8ff;    /* 爱丽丝蓝，非常淡的天蓝背景 */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', Arial, sans-serif;
+  background-color: var(--bg-color-soft);
+  color: #303133;
+  -webkit-font-smoothing: antialiased; /* 让字体更清晰 */
+}
+
+/* 所有的卡片都加上柔和的圆角和阴影 */
+.el-card {
+  border-radius: 12px !important;
+  border: none !important; /* 去掉生硬的边框 */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05) !important; /* 悬浮感阴影 */
+}
+
+/* 所有的按钮也都圆润一点 */
+.el-button {
+  border-radius: 8px !important;
+}
+
+/* 滚动条美化 (Chrome/Edge) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #c6e2ff;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
